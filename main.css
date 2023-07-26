@@ -1,0 +1,142 @@
+.background {
+    background-color: rgb(32, 89, 151);
+    background-size: auto;
+}
+
+
+.colored-box {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.white-text{
+   color: aliceblue;
+   margin: 0;
+   font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.white-text2 {
+   color: rgb(255, 255, 255);
+   font-size: 20px; 
+   float:right;
+   margin:0;
+   padding-left: 20px;
+   font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.white-text3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px; 
+    font-family: 'Zen Maru Gothic', sans-serif;
+ }
+ 
+
+.mozi {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 380px;
+    float:right;
+    margin:0;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 280px;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrap1 {
+    margin-top: 10;
+    margin-left: 200; /* 画像を右に50pxずらす */
+}
+
+
+.grid {
+    margin-top: 30;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-image1{
+    width: 400px;
+}
+
+.card-image2{
+    width: 200px;
+}
+
+.card-image{
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .card-image1 {
+      width: 100%; /* 画像を親要素に合わせて100%の幅に調整 */
+      max-width: 400px; /* 最大幅を設定 */
+    }
+  
+    .card-image {
+      width: 100%; /* 画像を親要素に合わせて100%の幅に調整 */
+      max-width: 300px; /* 最大幅を設定 */
+    }
+
+    .card-image2 {
+        width: 100%; /* 画像を親要素に合わせて100%の幅に調整 */
+        max-width: 200px; /* 最大幅を設定 */
+      }
+  
+    .white-text2,
+    .mozi {
+      float: none;
+      width: 100%;
+      text-align: center; /* テキストを中央揃え */
+    }
+
+    .white-text3,
+    .mozi {
+      float: left;
+      width: 100%;
+      margin-right: 156;
+    }
+  
+    .grid-item {
+      flex-basis: calc(50% - 20px); /* スマートフォンサイズで2つのアイテムを横並びにするために幅を1/2に設定 */
+    }
+  
+    .a {
+      font-size: 60px; /* スマートフォンサイズではフォントサイズを小さく調整 */
+      top: 350px; /* 上からの位置を調整 */
+      left: 30px; /* 左からの位置を調整 */
+    }
+  }
+
+  .background {
+    background-color: rgb(32, 89, 151);
+    background-size: auto;
+}
+
+
+
+

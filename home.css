@@ -1,0 +1,138 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-image: url("images/home.png");
+    background-size: auto;
+    background-position: center;
+  }
+
+@media (max-width: 768px) {
+    .grid-item {
+      flex-basis: calc(50% - 20px); /* スマートフォンサイズで2つのアイテムを横並びにするために幅を1/2に設定 */
+    }        
+    
+    .white-text2, .mozi {
+          float: none;
+          width: 100%;
+        }
+        
+    .card-image {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+  
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }      
+
+      .animate-fade-in {
+        animation: fade-in 6s ease-out; /* アニメーション名、時間、タイミング関数を指定 */
+      }
+
+      .color-change {
+        color: rgb(255, 255, 255); /* 色を任意の色に変更 */
+      }
+    
+
+      .a {
+        font-family: 'Anton', sans-serif;
+        font-size: 100px;
+        position: absolute;
+        top: 550px; /* 上からの位置を調整 */
+        left: 180px; 
+      }
+
+      body {
+        background-size: auto;
+        font-family: Arial, sans-serif;
+      }
+      
+      .navbar {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        
+      }
+
+      .navbar1 {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        
+      }
+      
+      .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+      }
+      
+      .menu-list {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center; /* メニューリストのアイテムを縦方向に中央揃え */
+        height: 100%; /* ナビゲーションバーと同じ高さに設定 */
+      }
+      
+      .menu-list li {
+        padding: 0 20px;
+      }
+      
+      .menu-list a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      .menu-list a:hover {
+        text-decoration: underline;
+      }
+  
+
+      .burger-menu img {
+        width: 40px; /* バーガーアイコンの幅を設定 */
+        height: 30px; /* バーガーアイコンの高さを設定 */
+        margin-left: 20;
+      }
+      
+
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column; /* ナビゲーションバーを縦方向に配置 */
+          padding: 20px; /* 適切な間隔を設定 */
+        }
+      
+        .logo {
+          margin-bottom: 20px; /* ロゴの下に余白を設定 */
+        }
+      
+        .menu-list {
+          flex-direction: column; /* メニューリストを縦方向に配置 */
+        }
+      
+        .menu-list li {
+          padding: 10px 0; /* メニューアイテム間の間隔を設定 */
+          text-align: center; /* テキストを中央揃え */
+        }
+      }
+
+    
